@@ -24,7 +24,7 @@
                         <button type="button" class="button" onclick="login()">Login</button>
                         <br>
                         <br>
-                       <a href="#" onclick="guest()">Guest</a> or  <a href="#" onclick="register()">Register</a> 
+                       <a href="#" onclick="guest()">Guest</a> or  <a href="http://philadiseregister.tk/" onclick="register()">Register</a> 
                         <br>
                         <br>
                        
@@ -55,12 +55,12 @@
 function guest()
     {
         localStorage.setItem( 'objectToPass', "guest");
-       window.location.href = "philadise.tk";
+       window.location.href = "http://philadise.tk/";
     }
 	function register()
     {
     
-           window.location.href =  "philadiseregister.tk";
+           window.location.href =  "http://philadiseregister.tk/";
     }
 
 	function login()
@@ -78,7 +78,7 @@ function guest()
             if(txt1.value === doc.data().username && txt2.value === doc.data().password)
                 {
                     alert("Account found");
-           window.location.href ="philadise.tk";
+           window.location.href ="http://philadise.tk/";
                     temp = 1;
                     localStorage.setItem( 'objectToPass', name);
                     document.getElementById("txtname").value = "";
